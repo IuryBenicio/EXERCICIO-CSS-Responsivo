@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.containerFlex{
+    display: flex;
+}
+
+.containerFlexHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    padding: 18px 25px;
+    background-color: rgb(129, 77, 17);
+    color: white;
+    position: sticky;
+    top: 0;
+    left: o;
+    z-index: 1;
+}
+
+header h1{
+    font-weight: bold;
+    font-family: 'Secular One', sans-serif;
+}
+
+nav a{
+    margin-left:8px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Secular One', sans-serif;
+}
+
+nav a:active{
+    color: black;
+}
+
+h2{
+    font-weight: bold;
+    margin:20px 0;
+    border-bottom: 4px solid rgba(129, 76, 17, 0.819);
+}
+
+.container img{
+    max-width: 50%;
+}
+
+.SobreALoja{
+    margin-top: 40px;
+    display: flex;
+}
+
+.SobreALoja article{
+    margin-left: 18px;
+}
+
+.Produtos{
+    margin-top: 20px;
+}
+
+.Produtos article img{
+    max-width: 200px;
+}
+
+.Produtos article{
+    display: block;
+    max-width: 254.75px;
+}
+
+.produto{
+    display: flex;
+    flex-wrap: wrap;    
+    margin: 1px;
+    text-align: center;
+}
+
+.produto button{
+    width: 92%;
+    background-color: rgba(129, 76, 17, 0.819);
+    border: none;
+    margin: 10px;
+    padding: 5px 0;
+    color: white;
+    cursor: pointer;
+}
+
+.produto button:active{
+    background-color: rgba(0, 0, 0, 0.819);
+}
+
+footer{
+    background-color: rgb(92, 55, 12);
+    padding-bottom: 50px;
+    color: white;
+}
+
+footer p, a{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 375px) {
+    header{
+        padding: 15px 20px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .container main{
+        max-width: 369px;
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column ;
+        text-align: center;
+    }
+
+    .SobreALoja img{
+        width: 369px;
+    }
+
+    .SobreALoja{
+        margin-top: 10px;
+        display: block;
+    }
+
+    .produto article{
+        margin: 0 auto;
+        
+    }
+    footer{
+        font-size: 12px;
+        text-align: center;
+    }
+    footer nav{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1180px) and (min-width: 820px){
+    .container{
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
